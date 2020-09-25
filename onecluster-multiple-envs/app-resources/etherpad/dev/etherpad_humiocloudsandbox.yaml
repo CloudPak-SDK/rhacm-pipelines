@@ -1,0 +1,15 @@
+apiVersion: integrations.sdk.cp4mcm.ibm.com/v1beta1
+kind: OutboundIntegrations
+metadata:
+  name: humio-cloud-sandbox
+spec:
+  elasticSearch:
+    - hosts: cloud.humio.com
+      user: sandbox
+      password:
+        secretName: humio
+        secretKey: token
+      scheme: https
+      logstashFormat: true
+      sslVersion: TLSv1_2
+

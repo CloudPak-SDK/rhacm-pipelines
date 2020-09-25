@@ -1,0 +1,10 @@
+apiVersion: integrations.sdk.cp4mcm.ibm.com/v1beta1
+kind: LogForwardingPolicy
+metadata:
+  name: etherpad-acm-dev.etherpad-acm-dev
+spec:
+  application:
+    name: etherpad-acm-dev
+    namespace: etherpad-acm-dev
+  outboundIntegrations:
+    - humio-cloud-sandbox

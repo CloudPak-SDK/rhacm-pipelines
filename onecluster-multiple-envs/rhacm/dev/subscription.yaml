@@ -15,4 +15,8 @@ spec:
     placementRef:
       kind: PlacementRule
       name: dev-cluster
-
+  overrides:
+    - clusterName: "/"
+      clusterOverrides:
+        - path: "data.token"
+          value: CHANGEME
