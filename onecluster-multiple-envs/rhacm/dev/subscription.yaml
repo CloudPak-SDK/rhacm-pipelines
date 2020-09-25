@@ -15,8 +15,8 @@ spec:
     placementRef:
       kind: PlacementRule
       name: dev-cluster
-  overrides:
-    - clusterName: "/"
-      clusterOverrides:
+  packageOverrides:
+    - packageName: humio
+      packageOverrides:
         - path: "data.token"
           value: CHANGEME
