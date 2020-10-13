@@ -1,4 +1,4 @@
-apiVersion: integrations.sdk.cp4mcm.ibm.com/v1beta1
+apiVersion: integrations.sdk.management.ibm.com/v1beta1
 kind: LogForwardingPolicy
 metadata:
   name: etherpad-acm-dev.etherpad-acm-dev
